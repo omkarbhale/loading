@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="p5.min.js"></script>
+    <script src="sketch.js" defer></script>
+    <style>
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: black;
+        }
+        main {
+            color: white;
+            font-family: monospace;
+            font-size: 1.5rem;
+            display: flex;
+            flex-direction: row;
+        }
+
+        main > div {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div>
+            <div class="loading" data-width="350" data-speed="150" data-color="[1,0,0]"></div>
+            <p>&lt;div class=&quot;loading&quot; data-width=&quot;350&quot; data-speed=&quot;150&quot; data-color=&quot;[1,0,0]&quot;&gt;&lt;/div&gt;</p>
+        </div>
+        <div>
+            <div class="loading" data-width="350" data-speed="80" data-color="[0,1,0]"></div>
+            <p>&lt;div class=&quot;loading&quot; data-width=&quot;350&quot; data-speed=&quot;80&quot; data-color=&quot;[0,1,0]&quot;&gt;&lt;/div&gt;</p>
+        </div>
+        <div>
+            <div class="loading" data-width="350" data-speed="120" data-color="[0,0,1]"></div>
+            <p>&lt;div class=&quot;loading&quot; data-width=&quot;350&quot; data-speed=&quot;120&quot; data-color=&quot;[0,0,1]&quot;&gt;&lt;/div&gt;</p>
+        </div>
+    </main>
+</body>
+</html>
